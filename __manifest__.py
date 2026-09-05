@@ -12,16 +12,13 @@ with a smart button to open it.
 The link is passive: it never creates or modifies the fixed asset, it
 only references one that already exists in Accounting.
 
-Deliberately minimal: unlike the Community bridge (sr_maintenance_asset,
-built against the OCA account_asset_management module whose source is
-public), this module targets Odoo Enterprise's native account_asset,
-which is proprietary - its internal field names could not be verified
-against real source or a real instance before first deployment. This
-version only relies on the model name (account.asset), not on any of
-its internal fields, to avoid guessing field names that could fail to
-install. Depreciation info shown inline (as in the Community bridge)
-can be added once field names are confirmed against a real Enterprise
-instance.
+The Fixed Asset tab shows status, acquisition date, original/salvage/
+book value and the full depreciation board (journal entries), mirroring
+the Community bridge (sr_maintenance_asset, built against the OCA
+account_asset_management module). Field names were confirmed against a
+real Enterprise instance (AWSS) via the field metadata returned by
+get_views, since account_asset's source is proprietary and could not be
+verified beforehand any other way.
     """,
     "author": "Serge Rivoallan",
     "website": "https://sr-maintenance.com",

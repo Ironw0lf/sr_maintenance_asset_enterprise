@@ -19,21 +19,29 @@ class SrAssetLinkMixin(models.AbstractModel):
              'details in Accounting.',
     )
     asset_state = fields.Selection(related='sr_asset_id.state', string='Asset Status')
-    asset_original_value = fields.Monetary(
-        related='sr_asset_id.original_value',
-        string='Asset Original Value',
-    )
+    asset_currency_id = fields.Many2one(related='sr_asset_id.currency_id', string='Asset Currency')
     asset_acquisition_date = fields.Date(
         related='sr_asset_id.acquisition_date',
         string='Asset Acquisition Date',
     )
-    asset_book_value = fields.Monetary(
-        related='sr_asset_id.book_value',
-        string='Asset Book Value',
+    asset_original_value = fields.Monetary(
+        related='sr_asset_id.original_value',
+        string='Asset Original Value',
+        currency_field='asset_currency_id',
     )
     asset_salvage_value = fields.Monetary(
         related='sr_asset_id.salvage_value',
         string='Asset Salvage Value',
+        currency_field='asset_currency_id',
+    )
+    asset_book_value = fields.Monetary(
+        related='sr_asset_id.book_value',
+        string='Asset Book Value',
+        currency_field='asset_currency_id',
+    )
+    asset_depreciation_move_ids = fields.One2many(
+        related='sr_asset_id.depreciation_move_ids',
+        string='Depreciation Board',
     )
 
     def action_view_sr_asset(self):
