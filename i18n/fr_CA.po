@@ -1,0 +1,126 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sr_maintenance_asset_enterprise
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-09-05 21:50+0000\n"
+"PO-Revision-Date: 2026-09-05 21:50+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sr_maintenance_asset_enterprise
+#: model_terms:ir.ui.view,arch_db:sr_maintenance_asset_enterprise.view_sr_equipment_form_asset
+#: model_terms:ir.ui.view,arch_db:sr_maintenance_asset_enterprise.view_sr_location_form_asset
+msgid "<span class=\"o_stat_text\">Fixed Asset</span>"
+msgstr "<span class=\"o_stat_text\">Immobilisation</span>"
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_asset_link_mixin__asset_acquisition_date
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_equipment__asset_acquisition_date
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_location__asset_acquisition_date
+msgid "Asset Acquisition Date"
+msgstr "Date d'acquisition de l'immobilisation"
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_asset_link_mixin__asset_book_value
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_equipment__asset_book_value
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_location__asset_book_value
+msgid "Asset Book Value"
+msgstr "Valeur comptable de l'immobilisation"
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_asset_link_mixin__asset_currency_id
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_equipment__asset_currency_id
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_location__asset_currency_id
+msgid "Asset Currency"
+msgstr "Devise de l'immobilisation"
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_asset_link_mixin__asset_original_value
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_equipment__asset_original_value
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_location__asset_original_value
+msgid "Asset Original Value"
+msgstr "Valeur d'origine de l'immobilisation"
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_asset_link_mixin__asset_salvage_value
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_equipment__asset_salvage_value
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_location__asset_salvage_value
+msgid "Asset Salvage Value"
+msgstr "Valeur non dépréciable de l'immobilisation"
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_asset_link_mixin__asset_state
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_equipment__asset_state
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_location__asset_state
+msgid "Asset Status"
+msgstr "Statut de l'immobilisation"
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_asset_link_mixin__asset_depreciation_move_ids
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_equipment__asset_depreciation_move_ids
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_location__asset_depreciation_move_ids
+msgid "Depreciation Board"
+msgstr "Tableau d'amortissement"
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model,name:sr_maintenance_asset_enterprise.model_sr_equipment
+msgid "Equipment"
+msgstr "Équipement"
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_asset_link_mixin__sr_asset_id
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_equipment__sr_asset_id
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_location__sr_asset_id
+msgid "Fixed Asset"
+msgstr "Immobilisation"
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model,name:sr_maintenance_asset_enterprise.model_sr_asset_link_mixin
+msgid "Fixed Asset Link"
+msgstr "Lien d'immobilisation"
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model,name:sr_maintenance_asset_enterprise.model_sr_location
+msgid "Location"
+msgstr "Emplacement"
+
+#. module: sr_maintenance_asset_enterprise
+#. odoo-python
+#: code:addons/sr_maintenance_asset_enterprise/models/sr_asset_link_mixin.py:0
+msgid "No fixed asset linked."
+msgstr "Aucune immobilisation liée."
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model.fields,help:sr_maintenance_asset_enterprise.field_sr_asset_link_mixin__sr_asset_id
+#: model:ir.model.fields,help:sr_maintenance_asset_enterprise.field_sr_equipment__sr_asset_id
+#: model:ir.model.fields,help:sr_maintenance_asset_enterprise.field_sr_location__sr_asset_id
+msgid ""
+"Optional link to the fixed asset record in Accounting, for reference to its "
+"depreciation schedule and book value. Never created automatically here - "
+"the asset must already exist. Open it via the smart button to see its full "
+"depreciation details in Accounting."
+msgstr ""
+"Lien optionnel vers la fiche d'immobilisation en Comptabilité, pour "
+"référence à son échéancier d'amortissement et sa valeur comptable. Jamais "
+"créée automatiquement ici - l'immobilisation doit déjà exister. Ouvre-la "
+"via le bouton intelligent pour voir tous ses détails de dépréciation en "
+"Comptabilité."
+
+#. module: sr_maintenance_asset_enterprise
+#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_location__purchase_date
+msgid "Procurement Date"
+msgstr "Date d'achat"
+
+#. module: sr_maintenance_asset_enterprise
+#: model_terms:ir.ui.view,arch_db:sr_maintenance_asset_enterprise.view_sr_equipment_form_asset
+#: model_terms:ir.ui.view,arch_db:sr_maintenance_asset_enterprise.view_sr_location_form_asset
+msgid "🏦 Fixed Asset"
+msgstr "🏦 Immobilisation"
