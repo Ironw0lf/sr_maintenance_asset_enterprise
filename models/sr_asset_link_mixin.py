@@ -27,6 +27,14 @@ class SrAssetLinkMixin(models.AbstractModel):
         related='sr_asset_id.acquisition_date',
         string='Asset Acquisition Date',
     )
+    asset_book_value = fields.Monetary(
+        related='sr_asset_id.book_value',
+        string='Asset Book Value',
+    )
+    asset_salvage_value = fields.Monetary(
+        related='sr_asset_id.salvage_value',
+        string='Asset Salvage Value',
+    )
 
     def action_view_sr_asset(self):
         self.ensure_one()

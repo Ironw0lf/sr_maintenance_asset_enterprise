@@ -26,12 +26,14 @@
                             <field name="asset_state" widget="badge"/>
                             <field name="asset_acquisition_date"/>
                             <field name="asset_original_value"/>
+                            <field name="asset_salvage_value"/>
+                            <field name="asset_book_value"/>
                         </group>
                     </group>
                     <div class="alert alert-info mt-2" role="alert" invisible="not sr_asset_id">
-                        <i class="fa fa-info-circle"/> Current book value and the full depreciation
-                        schedule are not shown here yet - use the "Fixed Asset" button above to see
-                        them in Accounting.
+                        <i class="fa fa-info-circle"/> The full depreciation schedule (year-by-year
+                        board) is not shown here yet - use the "Fixed Asset" button above to see it
+                        in Accounting.
                     </div>
                 </page>
             </page>
