@@ -1,0 +1,32 @@
+from odoo import fields, models
+from odoo.exceptions import UserError
+from odoo.tools.translate import _
+
+
+class SrAssetLinkMixin(models.AbstractModel):
+    _name = 'sr.asset.link.mixin'
+    _description = 'Fixed Asset Link'
+
+    sr_asset_id = fields.Many2one(
+        'account.asset',
+        string='Fixed Asset',
+        tracking=True,
+        help='Optional link to the fixed asset record in Accounting, for '
+             'reference to its depreciation schedule and book value. Never '
+             'created automatically here - the asset must already exist. '
+             'Open it via the smart button to see its full depreciation '
+             'details in Accounting.',
+    )
+
+    def action_view_sr_asset(self):
+        self.ensure_one()
+
+        if not self.sr_asset_id:
+            raise UserError(_('No fixed asset linked.'))
+
+        return {
+            'type': 'ir.actions.act_window',
+            'res_model': 'account.asset',
+            'res_id': self.sr_asset_id.id,
+            'view_mode': 'form',
+        }
