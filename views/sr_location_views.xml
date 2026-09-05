@@ -18,12 +18,20 @@
             <page name="equipments" position="after">
                 <page string="🏦 Fixed Asset" name="sr_asset">
                     <group>
-                        <field name="purchase_date"/>
-                        <field name="sr_asset_id"/>
+                        <group>
+                            <field name="purchase_date"/>
+                            <field name="sr_asset_id"/>
+                        </group>
+                        <group invisible="not sr_asset_id">
+                            <field name="asset_state" widget="badge"/>
+                            <field name="asset_acquisition_date"/>
+                            <field name="asset_original_value"/>
+                        </group>
                     </group>
                     <div class="alert alert-info mt-2" role="alert" invisible="not sr_asset_id">
-                        <i class="fa fa-info-circle"/> Depreciation details are not shown here yet -
-                        use the "Fixed Asset" button above to open the full record in Accounting.
+                        <i class="fa fa-info-circle"/> Current book value and the full depreciation
+                        schedule are not shown here yet - use the "Fixed Asset" button above to see
+                        them in Accounting.
                     </div>
                 </page>
             </page>

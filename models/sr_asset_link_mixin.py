@@ -11,11 +11,21 @@ class SrAssetLinkMixin(models.AbstractModel):
         'account.asset',
         string='Fixed Asset',
         tracking=True,
+        domain="[('state', '!=', 'model')]",
         help='Optional link to the fixed asset record in Accounting, for '
              'reference to its depreciation schedule and book value. Never '
              'created automatically here - the asset must already exist. '
              'Open it via the smart button to see its full depreciation '
              'details in Accounting.',
+    )
+    asset_state = fields.Selection(related='sr_asset_id.state', string='Asset Status')
+    asset_original_value = fields.Monetary(
+        related='sr_asset_id.original_value',
+        string='Asset Original Value',
+    )
+    asset_acquisition_date = fields.Date(
+        related='sr_asset_id.acquisition_date',
+        string='Asset Acquisition Date',
     )
 
     def action_view_sr_asset(self):
