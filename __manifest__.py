@@ -1,6 +1,6 @@
 {
     "name": "SR Maintenance - Asset Accounting Bridge (Enterprise)",
-    "version": "18.0.1.0.0",
+    "version": "19.0.1.0.0",
     "summary": "Link SR Maintenance equipment and locations to Odoo Enterprise fixed assets",
     "description": """
 SR Maintenance - Asset Accounting Bridge (Enterprise)
