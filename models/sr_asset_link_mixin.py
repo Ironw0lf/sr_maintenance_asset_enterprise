@@ -39,10 +39,6 @@ class SrAssetLinkMixin(models.AbstractModel):
         string='Asset Book Value',
         currency_field='asset_currency_id',
     )
-    asset_depreciation_move_ids = fields.One2many(
-        related='sr_asset_id.depreciation_move_ids',
-        string='Depreciation Board',
-    )
 
     def action_view_sr_asset(self):
         self.ensure_one()
