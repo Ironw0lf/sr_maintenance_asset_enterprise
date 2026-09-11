@@ -15,7 +15,7 @@
                     </button>
                 </div>
             </div>
-            <page name="equipments" position="after">
+            <page name="address" position="after">
                 <page string="🏦 Fixed Asset" name="sr_asset">
                     <group>
                         <group>
