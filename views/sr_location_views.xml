@@ -30,16 +30,6 @@
                             <field name="asset_book_value"/>
                         </group>
                     </group>
-                    <field name="asset_depreciation_move_ids" invisible="not sr_asset_id" readonly="1">
-                        <list>
-                            <field name="date"/>
-                            <field name="name" widget="open_move_widget"/>
-                            <field name="depreciation_value"/>
-                            <field name="asset_depreciated_value"/>
-                            <field name="asset_remaining_value"/>
-                            <field name="state" widget="badge"/>
-                        </list>
-                    </field>
                 </page>
             </page>
         </field>

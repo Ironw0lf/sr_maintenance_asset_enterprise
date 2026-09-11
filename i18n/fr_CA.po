@@ -64,13 +64,6 @@ msgid "Asset Status"
 msgstr "Statut de l'immobilisation"
 
 #. module: sr_maintenance_asset_enterprise
-#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_asset_link_mixin__asset_depreciation_move_ids
-#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_equipment__asset_depreciation_move_ids
-#: model:ir.model.fields,field_description:sr_maintenance_asset_enterprise.field_sr_location__asset_depreciation_move_ids
-msgid "Depreciation Board"
-msgstr "Tableau d'amortissement"
-
-#. module: sr_maintenance_asset_enterprise
 #: model:ir.model,name:sr_maintenance_asset_enterprise.model_sr_equipment
 msgid "Equipment"
 msgstr "Équipement"
