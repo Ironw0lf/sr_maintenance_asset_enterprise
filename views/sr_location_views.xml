@@ -5,15 +5,13 @@
         <field name="model">sr.location</field>
         <field name="inherit_id" ref="sr_maintenance.view_sr_location_form"/>
         <field name="arch" type="xml">
-            <div class="oe_title" position="before">
-                <div class="oe_button_box" name="button_box">
-                    <button class="oe_stat_button" type="object" name="action_view_sr_asset"
-                        icon="fa-money" invisible="not sr_asset_id">
-                        <div class="o_stat_info">
-                            <span class="o_stat_text">Fixed Asset</span>
-                        </div>
-                    </button>
-                </div>
+            <div name="button_box" position="inside">
+                <button class="oe_stat_button" type="object" name="action_view_sr_asset"
+                    icon="fa-money" invisible="not sr_asset_id">
+                    <div class="o_stat_info">
+                        <span class="o_stat_text">Fixed Asset</span>
+                    </div>
+                </button>
             </div>
             <page name="address" position="after">
                 <page string="🏦 Fixed Asset" name="sr_asset">
