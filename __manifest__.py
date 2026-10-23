@@ -31,6 +31,7 @@ verified beforehand any other way.
     "data": [
         "views/sr_equipment_views.xml",
         "views/sr_location_views.xml",
+        "views/account_asset_views.xml",
     ],
     "installable": True,
 }
