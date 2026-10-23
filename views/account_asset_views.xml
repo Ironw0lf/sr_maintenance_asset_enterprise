@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_account_asset_form_sr" model="ir.ui.view">
+        <field name="name">account.asset.form.sr</field>
+        <field name="model">account.asset</field>
+        <field name="inherit_id" ref="account_asset.view_account_asset_form"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button class="oe_stat_button" type="object" name="action_view_sr_equipment"
+                    icon="fa-wrench" invisible="sr_equipment_count == 0">
+                    <field name="sr_equipment_count" widget="statinfo" string="Equipment"/>
+                </button>
+                <button class="oe_stat_button" type="object" name="action_view_sr_location"
+                    icon="fa-map-marker" invisible="sr_location_count == 0">
+                    <field name="sr_location_count" widget="statinfo" string="Locations"/>
+                </button>
+            </div>
+        </field>
+    </record>
+</odoo>

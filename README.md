@@ -34,7 +34,11 @@ tab shows:
   status), with the journal entry itself one click away
 
 A smart button on both forms opens the linked asset's full record in
-Accounting.
+Accounting. The reverse is also true: the fixed asset's own form in
+Accounting gets "Equipment"/"Locations" smart buttons back to whichever
+maintenance record(s) reference it (opening the record directly when
+there's only one, or a filtered list when more than one equipment or
+location shares the same asset).
 
 ## A note on how this was built
 
