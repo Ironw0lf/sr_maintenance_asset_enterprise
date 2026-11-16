@@ -114,6 +114,5 @@ msgstr "Date d'achat"
 
 #. module: sr_maintenance_asset_enterprise
 #: model_terms:ir.ui.view,arch_db:sr_maintenance_asset_enterprise.view_sr_equipment_form_asset
-#: model_terms:ir.ui.view,arch_db:sr_maintenance_asset_enterprise.view_sr_location_form_asset
-msgid "🏦 Fixed Asset"
-msgstr "🏦 Immobilisation"
+msgid "💰 Finance"
+msgstr "💰 Finances"
