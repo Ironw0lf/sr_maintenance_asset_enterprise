@@ -14,7 +14,7 @@
                 </button>
             </div>
             <page name="notes" position="before">
-                <page string="🏦 Fixed Asset" name="sr_asset">
+                <page string="💰 Finance" name="sr_asset">
                     <group>
                         <group>
                             <field name="purchase_date"/>
